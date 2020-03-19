@@ -10,7 +10,6 @@ import gl51.service.photo.UpdateDatabase
 
 import javax.inject.Inject
 
-@Singleton
 class UploadPhotoImpl implements UploadPhoto {
 
     @Inject

@@ -10,7 +10,7 @@ class ResizePhotoImpl implements ResizePhoto {
 
     @Override
     Photo resizePhoto(Photo photo) {
-        //
+        return null
     }
 
 }

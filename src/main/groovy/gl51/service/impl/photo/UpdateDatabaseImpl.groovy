@@ -8,9 +8,6 @@ import javax.inject.Inject
 
 class UpdateDatabaseImpl implements UpdateDatabase {
 
-    @Inject
-    StockInCloud stockInCloud
-
     @Override
     Boolean updateDatabase(String coord) {
         return null
