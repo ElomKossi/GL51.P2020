@@ -1,4 +1,4 @@
-package gl51.data
+package gl51.data.ip
 
 class Ip {
 
