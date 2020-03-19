@@ -1,6 +1,6 @@
 package gl51.service.photo
 
-interface UpdateDatabase {
+interface UpdateDatabaseService {
 
     Boolean updateDatabase(String coord)
 

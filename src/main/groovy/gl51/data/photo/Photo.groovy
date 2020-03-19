@@ -1,8 +1,9 @@
 package gl51.data.photo
 
 class Photo {
-
-    int imageDim1
-    int imageDim2
+    String name
+    String coordinates
+    int Pixels_x
+    int Pixels_y
 
 }
