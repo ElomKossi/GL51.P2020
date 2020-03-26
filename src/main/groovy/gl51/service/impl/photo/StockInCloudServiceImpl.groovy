@@ -3,7 +3,9 @@ package gl51.service.impl.photo
 import gl51.data.photo.Photo
 
 import gl51.service.photo.StockInCloudService
+import javax.inject.Singleton
 
+@Singleton
 class StockInCloudServiceImpl implements StockInCloudService {
 
     @Override
