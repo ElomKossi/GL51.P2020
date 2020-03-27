@@ -9,7 +9,9 @@ import gl51.service.photo.StockInCloudService
 import gl51.service.photo.UpdateDatabaseService
 
 import javax.inject.Inject
+import javax.inject.Singleton
 
+@Singleton
 class UploadPhotoServiceImpl implements UploadPhotoService {
 
     @Inject
@@ -26,6 +28,7 @@ class UploadPhotoServiceImpl implements UploadPhotoService {
 
     @Override
     Boolean uploadPhoto() {
+        //
         Photo photo = resizePhotoService.resizePhoto()
         Photo thumbnail = makeThumbnailService.makeThumbnail(photo)
         String coord = stockInCloudService.stockInCloud(photo, thumbnail)

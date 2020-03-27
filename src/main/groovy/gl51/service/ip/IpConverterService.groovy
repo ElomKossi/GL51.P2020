@@ -1,4 +1,5 @@
 package gl51.service.ip
+
 /**
  * ceci convertit des IP en string
  */
