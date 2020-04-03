@@ -1,12 +1,12 @@
 package gl51.movie.service.impl
 
 import gl51.movie.data.Movie
-
+import gl51.movie.service.MovieRegistry
 import javax.inject.Singleton
 
 // Create test: Option + Enter
 @Singleton
-class MovieRegistryImpl implements gl51.movie.service.MovieRegistry {
+class MovieRegistryImpl implements MovieRegistry {
 
     private List<Movie> internalRegistry = []
 
