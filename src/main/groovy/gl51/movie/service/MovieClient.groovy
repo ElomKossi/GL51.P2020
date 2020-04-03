@@ -9,6 +9,6 @@ interface MovieClient {
      * @param imdbID
      * @return
      */
-    Movie GetMovieDetail(String imdbID)
+    Movie getMovieDetail(String imdbID)
 
 }

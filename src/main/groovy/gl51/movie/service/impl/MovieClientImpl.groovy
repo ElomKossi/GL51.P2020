@@ -8,7 +8,7 @@ import javax.inject.Singleton
 class MovieClientImpl implements MovieClient {
 
     @Override
-    Movie GetMovieDetail(String imdbID) {
+    Movie getMovieDetail(String imdbID) {
         return null
     }
 }
