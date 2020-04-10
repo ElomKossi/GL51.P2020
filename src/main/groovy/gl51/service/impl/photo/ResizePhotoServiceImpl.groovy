@@ -10,8 +10,8 @@ class ResizePhotoServiceImpl implements ResizePhotoService {
     @Override
     Photo resizePhoto(Photo photo) {
         //
-        photo.setPixels_x(1024)
-        photo.setPixels_y(1024)
+        photo.setPixelsX(1024)
+        photo.setPixelsY(1024)
         return photo
     }
 

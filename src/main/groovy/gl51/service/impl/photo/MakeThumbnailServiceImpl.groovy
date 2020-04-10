@@ -11,8 +11,8 @@ class MakeThumbnailServiceImpl implements MakeThumbnailService {
     @Override
     Photo makeThumbnail(Photo photo) {
         //
-        photo.setPixels_x(50)
-        photo.setPixels_y(50)
+        photo.setPixelsX(50)
+        photo.setPixelsY(50)
         return photo
     }
 
