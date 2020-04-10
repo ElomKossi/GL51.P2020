@@ -1,12 +1,11 @@
 package gl51.service.impl.photo
 
-import gl51.data.photo.Photo
-
 import gl51.service.photo.UploadPhotoService
 import gl51.service.photo.ResizePhotoService
 import gl51.service.photo.MakeThumbnailService
 import gl51.service.photo.StockInCloudService
 import gl51.service.photo.UpdateDatabaseService
+import gl51.data.photo.Photo
 
 import javax.inject.Inject
 import javax.inject.Singleton
@@ -24,7 +23,7 @@ class UploadPhotoServiceImpl implements UploadPhotoService {
     StockInCloudService stockInCloudService
 
     @Inject
-    UpdateDatabaseService UpdateDatabaseService
+    UpdateDatabaseService updateDatabaseService
 
     @Override
     Boolean uploadPhoto() {
@@ -32,7 +31,7 @@ class UploadPhotoServiceImpl implements UploadPhotoService {
         Photo photo = resizePhotoService.resizePhoto()
         Photo thumbnail = makeThumbnailService.makeThumbnail(photo)
         String coord = stockInCloudService.stockInCloud(photo, thumbnail)
-        Boolean updated = UpdateDatabaseService.updateDatabase(coord)
+        Boolean updated = updateDatabaseService.updateDatabase(coord)
 
         return updated
     }
